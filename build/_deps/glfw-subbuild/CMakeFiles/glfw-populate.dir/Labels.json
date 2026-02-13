@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate"
+		},
+		{
+			"file" : "C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-subbuild/CMakeFiles/b022ddffdf9abe5ed66d9d21fc38742f/glfw-populate.rule"
+		},
+		{
+			"file" : "C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-subbuild/CMakeFiles/dce25f1b1972750f9018232e96b020a8/glfw-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-subbuild/CMakeFiles/80ef4e0ed722df12969ac9dec5be1c88/glfw-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-subbuild/CMakeFiles/80ef4e0ed722df12969ac9dec5be1c88/glfw-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-subbuild/CMakeFiles/80ef4e0ed722df12969ac9dec5be1c88/glfw-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-subbuild/CMakeFiles/80ef4e0ed722df12969ac9dec5be1c88/glfw-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-subbuild/CMakeFiles/80ef4e0ed722df12969ac9dec5be1c88/glfw-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-subbuild/CMakeFiles/80ef4e0ed722df12969ac9dec5be1c88/glfw-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-subbuild/CMakeFiles/80ef4e0ed722df12969ac9dec5be1c88/glfw-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-subbuild/CMakeFiles/80ef4e0ed722df12969ac9dec5be1c88/glfw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-populate"
+		],
+		"name" : "glfw-populate"
+	}
+}

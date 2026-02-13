@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-subbuild\CMakeFiles\80ef4e0ed722df12969ac9dec5be1c88\glfw-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-subbuild\CMakeFiles\80ef4e0ed722df12969ac9dec5be1c88\glfw-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-subbuild\CMakeFiles\80ef4e0ed722df12969ac9dec5be1c88\glfw-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-subbuild\CMakeFiles\80ef4e0ed722df12969ac9dec5be1c88\glfw-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-subbuild\CMakeFiles\80ef4e0ed722df12969ac9dec5be1c88\glfw-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-subbuild\CMakeFiles\80ef4e0ed722df12969ac9dec5be1c88\glfw-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-subbuild\CMakeFiles\80ef4e0ed722df12969ac9dec5be1c88\glfw-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-subbuild\CMakeFiles\80ef4e0ed722df12969ac9dec5be1c88\glfw-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-subbuild\CMakeFiles\dce25f1b1972750f9018232e96b020a8\glfw-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-subbuild\CMakeFiles\b022ddffdf9abe5ed66d9d21fc38742f\glfw-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-subbuild\CMakeFiles\glfw-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7A46C3E6-6436-33A8-B496-48DEB42D2E73}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

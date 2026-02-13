@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\CMakeFiles\4fa738716a5d4a8730619101a2732845\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-src\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-src\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-src\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\ololi\StudioProjects\waterSimulation\build\_deps\glfw-build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{80CD193D-2879-3AB7-9BC6-93E5EED575B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4FCD4C88-2223-3CF7-AC5D-18676EECE129}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

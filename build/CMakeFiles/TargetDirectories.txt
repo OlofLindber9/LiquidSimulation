@@ -1,0 +1,10 @@
+C:/Users/ololi/StudioProjects/waterSimulation/build/CMakeFiles/WaterSimulation.dir
+C:/Users/ololi/StudioProjects/waterSimulation/build/CMakeFiles/INSTALL.dir
+C:/Users/ololi/StudioProjects/waterSimulation/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ololi/StudioProjects/waterSimulation/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-build/CMakeFiles/uninstall.dir
+C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-build/CMakeFiles/INSTALL.dir
+C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-build/src/CMakeFiles/glfw.dir
+C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-build/src/CMakeFiles/update_mappings.dir
+C:/Users/ololi/StudioProjects/waterSimulation/build/_deps/glfw-build/src/CMakeFiles/INSTALL.dir
