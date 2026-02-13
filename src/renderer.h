@@ -30,7 +30,7 @@ private:
     // Uniform locations
     GLint splat_uRes, splat_uPtSize;
     GLint fluid_uTex, fluid_uRes, fluid_uThresh;
-    GLint bg_uRes;
+    GLint bg_uRes, bg_uWall;
 
     GLuint compileProgram(const char* vsSrc, const char* fsSrc);
     void   setupGeometry();

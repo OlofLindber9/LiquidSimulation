@@ -83,6 +83,7 @@ void main() {
 static const char* BG_FS = R"(
 #version 330 core
 uniform vec2 u_resolution;
+uniform float u_wallThickness;
 in  vec2 v_texCoord;
 out vec4 fragColor;
 
@@ -91,13 +92,13 @@ void main() {
 
     // Container walls
     vec2 px = gl_FragCoord.xy;
-    float wall = 3.0;
+    float wall = u_wallThickness;
     float edge = 0.0;
     if (px.x < wall || px.x > u_resolution.x - wall ||
         px.y < wall || px.y > u_resolution.y - wall) {
         edge = 1.0;
     }
-    vec3 wallColor = vec3(0.22, 0.28, 0.38);
+    vec3 wallColor = vec3(0.30, 0.36, 0.48);
     fragColor = vec4(mix(bg, wallColor, edge), 1.0);
 }
 )";
@@ -122,7 +123,8 @@ FluidRenderer::FluidRenderer(int w, int h) : width(w), height(h) {
     fluid_uThresh = glGetUniformLocation(fluidProg, "u_threshold");
 
     glUseProgram(bgProg);
-    bg_uRes = glGetUniformLocation(bgProg, "u_resolution");
+    bg_uRes  = glGetUniformLocation(bgProg, "u_resolution");
+    bg_uWall = glGetUniformLocation(bgProg, "u_wallThickness");
 
     glUseProgram(0);
 
@@ -232,6 +234,7 @@ void FluidRenderer::render(const SPHSimulation& sim) {
     // Background
     glUseProgram(bgProg);
     glUniform2f(bg_uRes, (float)width, (float)height);
+    glUniform1f(bg_uWall, cfg::WALL_THICKNESS);
     glBindVertexArray(quadVAO);
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 

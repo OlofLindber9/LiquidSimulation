@@ -24,6 +24,11 @@ SPHSimulation::SPHSimulation(int width, int height)
 
 void SPHSimulation::addParticle(float x, float y, float vx, float vy) {
     if (count >= cfg::MAX_PARTICLES) return;
+    const float pad = cfg::BOUND_PAD;
+    if (x < pad) x = pad;
+    if (x > width  - pad) x = (float)width  - pad;
+    if (y < pad) y = pad;
+    if (y > height - pad) y = (float)height - pad;
     int i = count++;
     posX[i] = x;  posY[i] = y;
     velX[i] = vx; velY[i] = vy;
@@ -46,12 +51,14 @@ void SPHSimulation::initDamBreak() {
         }
     }
 
-    // Compute rest density from initial packed configuration
+    // Compute rest density from initial packed configuration,
+    // then scale down so settled particles always generate positive
+    // pressure and repel each other.
     buildGrid();
     computeDensityPressure();
     float total = 0.0f;
     for (int i = 0; i < count; i++) total += density[i];
-    restDensity = total / (float)count;
+    restDensity = (total / (float)count) * 0.97f;
 }
 
 // ---- Spatial hash ----
@@ -100,7 +107,8 @@ void SPHSimulation::computeDensityPressure() {
         }
 
         density[i]  = rho;
-        pressure[i] = stiffness * (rho - restDensity);
+        float p = stiffness * (rho - restDensity);
+        pressure[i] = (p > 0.0f) ? p : 0.0f;
     }
 }
 
@@ -156,7 +164,12 @@ void SPHSimulation::computeForces() {
 
 void SPHSimulation::integrate(float dt) {
     const float damping = cfg::BOUND_DAMPING;
-    const float pad = 4.0f;
+    const float pad = cfg::BOUND_PAD;
+
+    const float minX = pad;
+    const float maxX = (float)width  - pad;
+    const float minY = pad;
+    const float maxY = (float)height - pad;
 
     for (int i = 0; i < count; i++) {
         float rho = density[i];
@@ -168,11 +181,11 @@ void SPHSimulation::integrate(float dt) {
         posX[i] += dt * velX[i];
         posY[i] += dt * velY[i];
 
-        // Boundary collisions
-        if (posX[i] < pad)                { posX[i] = pad;                velX[i] *= damping; }
-        else if (posX[i] > width  - pad)  { posX[i] = (float)width  - pad; velX[i] *= damping; }
-        if (posY[i] < pad)                { posY[i] = pad;                velY[i] *= damping; }
-        else if (posY[i] > height - pad)  { posY[i] = (float)height - pad; velY[i] *= damping; }
+        // Boundary collisions — hard clamp to keep particles inside
+        if (posX[i] < minX) { posX[i] = minX; velX[i] *= damping; }
+        if (posX[i] > maxX) { posX[i] = maxX; velX[i] *= damping; }
+        if (posY[i] < minY) { posY[i] = minY; velY[i] *= damping; }
+        if (posY[i] > maxY) { posY[i] = maxY; velY[i] *= damping; }
     }
 }
 
